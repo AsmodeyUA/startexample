@@ -1,5 +1,4 @@
 
-
 class Facade:
     def __init__(self):
         self._service1 = Service1()
@@ -13,12 +12,16 @@ class Facade:
 
 
 class Service1:
+
     def operation1(self, a):
         return a
+
     def operation2(self, a):
         return a
 
+
 class Service2:
+
     @staticmethod
     def operation1(a):
         return a
@@ -27,5 +30,10 @@ class Service2:
         return a
 
 
-f = Facade()
-print (f.calculate())
+def main():
+    f = Facade()
+    print (f.calculate())
+
+
+if __name__ =="__main__":
+    main()
